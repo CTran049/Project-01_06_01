@@ -12,12 +12,12 @@ Filename: script.js
 var formValidity = true;
 
 function validateRequired(fieldsetId) {
+    alert("1");
     var input = document.getElementsByTagName("#contactinfo input");
     var errorDiv = document.getElementById("errorText");
     var fieldsetValidity = true;
     var currentElement;
 
-    try {
     for (var i = 0; i < input.length; i++) {
         currentElement = input[i];
         if (currentElement.value === "") {
@@ -28,11 +28,10 @@ function validateRequired(fieldsetId) {
         }
 
         if (fieldsetValidity == false) {
-
+            alert("fdsafas");
             errorDiv.style.display = "block";
             formValidity = false;
         }
-}
 }
 }
 
